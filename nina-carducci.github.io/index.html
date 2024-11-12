@@ -56,19 +56,65 @@
 						aria-label="Slide 3"></button>
 				</div>
 				<div class="carousel-inner">
+					<!--Images optimisées en webP et ajout lazy après la 1ere en priorité-->
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100"
-							alt="Homme d'affaires traversant un passage piéton">
-					</div>
+						<picture>
+                            <source 
+                                srcset="./assets/images/slider/ryoji-iwata-1920.webp" 
+                                media="(min-width: 1400px)"
+                                type="image/webp">
+                            <source 
+                                srcset="./assets/images/slider/ryoji-iwata-800.webp" 
+                                media="(min-width: 768px)"
+                                type="image/webp">
+                            <img 
+                                src="./assets/images/slider/ryoji-iwata-800.jpg" 
+                                class="d-block w-100" 
+                                alt="Homme d'affaires traversant un passage piéton"
+                                width="1920"
+                                height="1080"
+                                fetchpriority="high">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source 
+                                srcset="./assets/images/slider/nicholas-green-1920.webp"
+                                media="(min-width: 1400px)"
+                                type="image/webp">
+                            <source 
+                                srcset="./assets/images/slider/nicholas-green-800.webp"
+                                media="(min-width: 768px)"
+                                type="image/webp">
+                            <img 
+                                src="./assets/images/slider/nicholas-green-800.jpg" 
+                                class="d-block w-100" 
+                                alt="Foule enthousiaste lors d'un concert"
+                                width="1920"
+                                height="1080"
+                                loading="lazy">
+                        </picture>
+                    </div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100"
-							alt="Foule enthousiaste lors d'un concert">
-					</div>
-					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100"
-							alt="Couple de mariés dansant">
-					</div>
-				</div>
+                        <picture>
+                            <source 
+                                srcset="./assets/images/slider/edward-cisneros-1920.webp"
+                                media="(min-width: 1400px)"
+                                type="image/webp">
+                            <source 
+                                srcset="./assets/images/slider/edward-cisneros-800.webp"
+                                media="(min-width: 768px)"
+                                type="image/webp">
+                            <img 
+                                src="./assets/images/slider/edward-cisneros-800.jpg" 
+                                class="d-block w-100" 
+                                alt="Couple de mariés dansant"
+                                width="1920"
+                                height="1080"
+                                loading="lazy">
+                        </picture>
+                    </div>
+                </div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 					data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
