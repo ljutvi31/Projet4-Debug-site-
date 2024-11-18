@@ -135,7 +135,7 @@
       $(`#${lightboxId}`)
         .find(".lightboxImage")
         .attr("src", element.attr("src"));
-      $(`#${lightboxId}`).modal("toogle");
+      $(`#${lightboxId}`).modal("show");
     },
  
     // MODIFICATION : Navigation optimisée dans la lightbox
