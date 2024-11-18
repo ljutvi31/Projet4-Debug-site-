@@ -129,7 +129,8 @@ body {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer; /*curseur ajouté*/
 }
 
 .item-column {
